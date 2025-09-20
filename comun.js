@@ -13,9 +13,9 @@ window.onload = function(){
 //Programado a las 5am. Joder, si es que es cuando más productiva soy.
 function cambiarTriangulo(seccion){
     var titulo = document.getElementById("tituloDatos" + seccion)
-    if(titulo.innerHTML.slice(-1) == "▲"){
-        titulo.innerHTML = titulo.innerHTML.replace("▲", "▼")
-    }else if(titulo.innerHTML.slice(-1) == "▼"){
-        titulo.innerHTML = titulo.innerHTML.replace("▼", "▲")
+    if(titulo.innerHTML.slice(-1) == "▼"){
+        titulo.innerHTML = titulo.innerHTML.replace("▼", "▶")
+    }else if(titulo.innerHTML.slice(-1) == "▶"){
+        titulo.innerHTML = titulo.innerHTML.replace("▶", "▼")
     }
 }

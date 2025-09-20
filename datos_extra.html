@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FaQ sobre Nana</title>
+    <title>Datos sobre Nana</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
         rel="stylesheet">
 
 
-   
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -31,31 +31,77 @@
     <!-- A ver que me apunte la paleta 0d5c63 247b7b 44a1a0 78cdd7 son como turquesas estan bien guapos yo creo-->
     <header>
         <h6 style="color:#247b7b">
-            Si estás viendo esto, es porque el header se está cargando. Si tarda mucho en cargar quizás se ha roto algo en el server, o quizá es porque no sé hacer headers. Bueno, en verdad sí sé hacer headers pero en vez de hacer uno en cada html, como no estoy usando ningún framework, he hecho uno uno solo que importo con un fetch, así que tarda un poquito en cargar. Me da palo usar un framework para lo que en principio va a ser una web sencilla y me da palo tener que actualizar toooodos los headers de tooooodos los htmls cada vez que cambie algo. Por cierto has perdido el juego.         </h6>
+            Si estás viendo esto, es porque el header se está cargando. Si tarda mucho en cargar quizás se ha roto algo
+            en el server, o quizá es porque no sé hacer headers. Bueno, en verdad sí sé hacer headers pero en vez de
+            hacer uno en cada html, como no estoy usando ningún framework, he hecho uno uno solo que importo con un
+            fetch, así que tarda un poquito en cargar. Me da palo usar un framework para lo que en principio va a ser
+            una web sencilla y me da palo tener que actualizar toooodos los headers de tooooodos los htmls cada vez que
+            cambie algo. Por cierto has perdido el juego. </h6>
     </header>
 
 
-    <br><br>
+    <br><br><br>
     <h2 style="text-align: center;">¡Aquí tienes una colección de datos sobre mí!</h2>
-    <br><br>
+    <br>
 
     <div class="seccionDatos">
-        
-        <a data-bs-toggle="collapse" href="#datosVideojuegos" onClick="cambiarTriangulo('Videojuegos')">
+
+        <a data-bs-toggle="collapse" href="#contenedorDatosVideojuegos" onClick="cambiarTriangulo('Videojuegos')">
             <div width="100%" style="text-align: center;">
-                
-                <h3 id="tituloDatosVideojuegos">Videojuegos ▼</h3>
+
+                <h2 id="tituloDatosVideojuegos">Videojuegos ▶</h2>
             </div>
         </a>
 
-
-        
-        <div class="collapse" id="datosVideojuegos">
-           asdff
+        <div class="collapse" id="contenedorDatosVideojuegos">
+            <div class="contenidoDatos">
+                <h3>-¿Cuál es tu videojuego favorito?</h3>
+                <p>Me cuesta elegir uno solo, pero me quedo con Outer Wilds.</p>
+            </div>
+            <div class="contenidoDatos">
+                <h3>-¿Qué te gusta de Outer Wilds?</h3>
+                <p>Soy fan de la exploración y del espacio. La mezcla de ambos junto con personajes carismáticos y una
+                    historia misteriosa es perfecta para mí. He rejugado el juego decenas de veces, conozco el sistema
+                    solar de pe a pa, y de vez en cuando speedruneo el juego.</p>
+            </div>
+            <div class="contenidoDatos">
+                <h3>-¿Cuál fue tu primer videojuego?</h3>
+                <p>Cuando tenía 5 años, por navidad, pedí una DS. Me regalaron una PSP con el PES 06. Al principio me
+                    decepcionó que no fuese una DS, pero al poco tiempo aprendí a apreciarla.</p>
+            </div>
+            <div class="contenidoDatos">
+                <h3>-¿Qué género de videojuegos prefieres?</h3>
+                <p>Me gusta cualquier cosa, desde shooters y juegos de carreras hasta rougelikes o juegos casuales.
+                    Mientras sea un buen juego, ¡soy capaz de disfrutarlo!</p>
+            </div>
         </div>
     </div>
-        
 
+
+    <div class="seccionDatos">
+
+        <a data-bs-toggle="collapse" href="#contenedorDatosMusica" onClick="cambiarTriangulo('Musica')">
+            <div width="100%" style="text-align: center;">
+
+                <h2 id="tituloDatosMusica">Música ▶</h2>
+            </div>
+        </a>
+
+        <div class="collapse" id="contenedorDatosMusica">
+            <div class="contenidoDatos">
+                <h3>-¿Cuál es tu grupo favorito?</h3>
+                <p>King Gizzard & the Lizard Wizard.</p>
+            </div>
+            <div class="contenidoDatos">
+                <h3>-¿Qué género musical te gusta más?</h3>
+                <p>A grandes rasgos me gusta el hip-hop, la electrónica, y algo de rock progresivo.</p>
+            </div>
+            <div class="contenidoDatos">
+                <h3>-¿Siempre te ha gustado la misma música?</h3>
+                <p>Más o menos. Hace años escuchaba menos música y con ello mis gustos estaban menos refinados. Con los años me he quedado solo con lo que más me gusta y he descubierto nueva música, pero siempre he tenido gusto por los mismos tipos de música.</p>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -82,4 +128,5 @@
 
 
 </body>
+
 </html>
